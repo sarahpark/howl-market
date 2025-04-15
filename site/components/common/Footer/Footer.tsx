@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import type { Page } from '@commerce/types/page'
 import getSlug from '@lib/get-slug'
 import { Github, Vercel } from '@components/icons'
+import HowlMarket from '@components/icons/HowlMarket'
 import { Logo, Container } from '@components/ui'
 import { I18nWidget } from '@components/common'
 import s from './Footer.module.css'
@@ -58,7 +59,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
               <a
                 className={s.link}
                 aria-label="Github Repository"
-                href="https://github.com/vercel/commerce"
+                href="https://github.com/howl-market/commerce"
               >
                 <Github />
               </a>
@@ -74,14 +75,14 @@ const Footer: FC<Props> = ({ className, pages }) => {
             <span className="text-primary">Created by</span>
             <a
               rel="noopener noreferrer"
-              href="https://vercel.com"
-              aria-label="Vercel.com Link"
+              href="https://howlmarket.com"
+              aria-label="Howl Market Link"
               target="_blank"
               className="text-primary"
             >
-              <Vercel
+              <HowlMarket
                 className="inline-block h-6 ml-3 text-primary"
-                alt="Vercel.com Logo"
+                alt="Howl Market Logo"
               />
             </a>
           </div>
